@@ -13,5 +13,6 @@ VOLUME /data
 WORKDIR /kafka
 COPY config/server.properties /kafka/config/server.properties
 COPY run.sh /run.sh
+RUN chmod +x /run.sh
 
 CMD /run.sh
